@@ -1,101 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Styles */
 :root {
   font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* These are fallback values and will be overridden by App.css theme variables */
-  color: #333333;
-  background-color: #ffffff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  font-weight: 500;
-  color: var(--primary-color);
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: var(--primary-dark);
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 3.2em;
-}
-
-h2 {
-  font-size: 2.6em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--secondary-color);
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-button:hover {
-  background-color: var(--primary-color);
-}
-
-button:focus,
-button:focus-visible {
-  outline: 3px solid rgba(0, 204, 255, 0.5);
-}
-
-input, textarea, select {
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 0.6em 1em;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-input:focus, textarea:focus, select:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(0, 204, 255, 0.2);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Animations */
+/* Custom Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -112,46 +36,15 @@ img {
   100% { transform: scale(1); }
 }
 
-/* Apply animations to elements */
-.hero, .section-title, .product-card, .category-card, .testimonial-card {
+/* Animation classes */
+.animate-fade-in {
   animation: fadeIn 0.8s ease-out;
 }
 
-/* Media queries for responsive design */
-@media (max-width: 1200px) {
-  .section-title {
-    font-size: 2.2em;
-  }
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
 }
 
-@media (max-width: 768px) {
-  :root {
-    font-size: 14px;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-  }
-  
-  h2 {
-    font-size: 2em;
-  }
-  
-  h3 {
-    font-size: 1.7em;
-  }
-  
-  section {
-    padding: 3rem 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    font-size: 12px;
-  }
-  
-  section {
-    padding: 2rem 1rem;
-  }
+.animate-pulse-once {
+  animation: pulse 2s ease-out;
 }

@@ -1,103 +1,44 @@
-/* Theme Variables */
-:root {
-  /* Light Theme Colors */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --text-primary: #333333;
-  --text-secondary: #666666;
-  --accent-color: #00ccff;
-  --accent-dark: #0099cc;
-  --border-color: #ddd;
-  --card-bg: #ffffff;
-  --navbar-bg: #121212;
-  --navbar-text: #ffffff;
-  --footer-bg: #121212;
-  --footer-text: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --btn-hover: #0099cc;
+/* Tailwind CSS is now handling most styling. This file is kept for any custom styles that can't be handled with Tailwind utilities */
+
+/* Custom animation keyframes */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(0, 204, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
+  }
 }
 
-/* Dark Theme Colors */
-.dark-theme {
-  --bg-primary: #121212;
-  --bg-secondary: #1e1e1e;
-  --text-primary: #e0e0e0;
-  --text-secondary: #b0b0b0;
-  --accent-color: #00ccff;
-  --accent-dark: #00a3cc;
-  --border-color: #333;
-  --card-bg: #252525;
-  --navbar-bg: #050505;
-  --navbar-text: #f0f0f0;
-  --footer-bg: #050505;
-  --footer-text: #f0f0f0;
-  --shadow: rgba(0, 0, 0, 0.3);
-  --btn-hover: #00a3cc;
+.glow-effect {
+  animation: glow 2s infinite;
 }
 
-/* Theme Transition */
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+/* Custom transitions */
+.page-transition {
+  transition: all 0.3s ease;
 }
 
-/* Main App Styling */
-.app {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-main {
-  flex: 1;
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-/* Navbar Styling */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--navbar-bg);
-  color: var(--navbar-text);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px var(--shadow);
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
 }
 
-.navbar-brand h1 {
-  font-size: 2rem;
-  margin: 0;
-  color: var(--accent-color);
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  color: var(--navbar-text);
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: var(--accent-color);
-}
-
-.nav-actions {
-  display: flex;
   align-items: center;
   gap: 1.5rem;
 }

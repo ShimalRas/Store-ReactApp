@@ -15,13 +15,13 @@ export const ThemeProvider = ({ children }) => {
     }
   });
 
-  // Apply theme class to the body element
+  // Apply theme class to the html element for Tailwind dark mode
   useEffect(() => {
     if (isDarkTheme) {
-      document.body.classList.add('dark-theme');
+      document.documentElement.classList.add('dark');
       localStorage.setItem('gamerGearTheme', 'dark');
     } else {
-      document.body.classList.remove('dark-theme');
+      document.documentElement.classList.remove('dark');
       localStorage.setItem('gamerGearTheme', 'light');
     }
   }, [isDarkTheme]);
