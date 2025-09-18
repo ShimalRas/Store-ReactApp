@@ -39,9 +39,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-  align-items: center;
-  gap: 1.5rem;
-}
 
 .theme-toggle {
   background: none;
