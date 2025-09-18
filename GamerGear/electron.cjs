@@ -1,9 +1,51 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const isDev = process.env.NODE_ENV === 'development';
+const http = require('http');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
+
+// Helper function to try loading the dev server on different ports
+function tryLoadDevServer(win) {
+  // Check if a port was passed as an argument
+  const customPort = process.argv[2];
+  
+  if (customPort) {
+    win.loadURL(`http://localhost:${customPort}`);
+    console.log(`Loading from specified port ${customPort}`);
+    return;
+  }
+  
+  // List of ports to try
+  const ports = [5173, 5174, 5175, 5176];
+  
+  // Try each port
+  let loaded = false;
+  for (const port of ports) {
+    try {
+      const req = http.get(`http://localhost:${port}`, (res) => {
+        if (res.statusCode === 200 && !loaded) {
+          win.loadURL(`http://localhost:${port}`);
+          console.log(`Loaded from port ${port}`);
+          loaded = true;
+        }
+      }).on('error', () => {});
+      
+      req.end();
+    } catch (err) {
+      console.log(`Error checking port ${port}: ${err.message}`);
+    }
+  }
+  
+  // Fallback
+  setTimeout(() => {
+    if (!loaded) {
+      win.loadURL('http://localhost:5174');
+      console.log('Falling back to default port 5174');
+    }
+  }, 1000);
+}
 let mainWindow;
 
 function createWindow() {
@@ -20,7 +62,10 @@ function createWindow() {
   // Load the app
   if (isDev) {
     // In development mode, load from development server
-    mainWindow.loadURL('http://localhost:5173');
+    // Look for a port argument or use default (5174)
+    const port = process.argv[2] || 5174;
+    mainWindow.loadURL(`http://localhost:${port}`);
+    console.log(`Loading from port ${port}`);
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
   } else {

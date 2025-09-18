@@ -3,15 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "electron.cjs",
+  "main": "electron.mjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron electron.cjs\"",
+    "electron:dev": "concurrently \"npm run dev\" \"wait-on --timeout 60000 tcp:5173 tcp:5174 tcp:5175 && electron electron.mjs\"",
     "electron:build": "npm run build && electron-builder",
-    "electron:start": "electron electron.cjs"
+    "electron:start": "electron electron.mjs",
+    "start": "node start-electron.mjs",
+    "electron:cjs": "electron electron-main.cjs",
+    "desktop": "node start-app.cjs"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -23,6 +26,7 @@
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
     "concurrently": "^9.2.1",
+    "cross-env": "^10.0.0",
     "electron": "^38.1.2",
     "electron-builder": "^26.0.12",
     "eslint": "^9.33.0",

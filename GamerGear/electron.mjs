@@ -1,5 +1,12 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
+import { app, BrowserWindow } from 'electron';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import http from 'http';
+
+// Get __dirname equivalent in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const isDev = process.env.NODE_ENV === 'development';
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -20,7 +27,10 @@ function createWindow() {
   // Load the app
   if (isDev) {
     // In development mode, load from development server
-    mainWindow.loadURL('http://localhost:5173');
+    // Look for a port argument or use default (5174)
+    const port = process.argv[2] || 5174;
+    mainWindow.loadURL(`http://localhost:${port}`);
+    console.log(`Loading from port ${port}`);
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
   } else {
