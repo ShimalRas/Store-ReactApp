@@ -5,7 +5,7 @@ const productData = [
     id: 1,
     name: 'RGB Gaming Keyboard',
     price: 149.99,
-    image: 'https://via.placeholder.com/300x200?text=Gaming+Keyboard',
+    image: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
     category: 'Peripherals',
     rating: 4.8,
     inStock: true
@@ -14,7 +14,7 @@ const productData = [
     id: 2,
     name: 'Ultra-Precision Gaming Mouse',
     price: 89.99,
-    image: 'https://via.placeholder.com/300x200?text=Gaming+Mouse',
+    image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
     category: 'Peripherals',
     rating: 4.9,
     inStock: true
@@ -23,7 +23,7 @@ const productData = [
     id: 3,
     name: '4K Gaming Monitor 144Hz',
     price: 399.99,
-    image: 'https://via.placeholder.com/300x200?text=Gaming+Monitor',
+    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
     category: 'Monitors',
     rating: 4.7,
     inStock: true
@@ -32,7 +32,7 @@ const productData = [
     id: 4,
     name: 'Gaming Headset with Noise Cancellation',
     price: 129.99,
-    image: 'https://via.placeholder.com/300x200?text=Gaming+Headset',
+    image: 'https://images.unsplash.com/photo-1599669454699-248893623440?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
     category: 'Audio',
     rating: 4.6,
     inStock: true
@@ -41,7 +41,7 @@ const productData = [
     id: 5,
     name: 'Ergonomic Gaming Chair',
     price: 299.99,
-    image: 'https://via.placeholder.com/300x200?text=Gaming+Chair',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
     category: 'Furniture',
     rating: 4.5,
     inStock: false
@@ -50,9 +50,36 @@ const productData = [
     id: 6,
     name: 'RGB Mouse Pad - Extended',
     price: 49.99,
-    image: 'https://via.placeholder.com/300x200?text=RGB+Mouse+Pad',
+    image: 'https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
     category: 'Accessories',
     rating: 4.3,
+    inStock: true
+  },
+  {
+    id: 7,
+    name: 'Wireless Gaming Controller',
+    price: 79.99,
+    image: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+    category: 'Controllers',
+    rating: 4.7,
+    inStock: true
+  },
+  {
+    id: 8,
+    name: 'RGB Gaming Laptop Cooling Pad',
+    price: 39.99,
+    image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+    category: 'Accessories',
+    rating: 4.4,
+    inStock: true
+  },
+  {
+    id: 9,
+    name: 'Mechanical Switch Gaming Keypad',
+    price: 99.99,
+    image: 'https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+    category: 'Peripherals',
+    rating: 4.6,
     inStock: true
   }
 ];

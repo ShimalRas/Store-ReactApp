@@ -5,7 +5,7 @@ function FeaturedCategories() {
     {
       id: 1,
       name: 'Gaming Headsets',
-      image: 'https://via.placeholder.com/300x300?text=Headsets',
+      image: 'https://images.unsplash.com/photo-1599669454699-248893623440?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
       description: 'Immersive audio experience for your games',
       bgColor: 'bg-purple-600',
       count: '24 Products'
@@ -13,7 +13,7 @@ function FeaturedCategories() {
     {
       id: 2,
       name: 'Gaming Keyboards',
-      image: 'https://via.placeholder.com/300x300?text=Keyboards',
+      image: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
       description: 'Responsive mechanical keyboards for quick actions',
       bgColor: 'bg-blue-600',
       count: '32 Products'
@@ -21,7 +21,7 @@ function FeaturedCategories() {
     {
       id: 3,
       name: 'Gaming Mice',
-      image: 'https://via.placeholder.com/300x300?text=Mice',
+      image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
       description: 'Precision mice for perfect aiming',
       bgColor: 'bg-red-600',
       count: '18 Products'
@@ -29,7 +29,7 @@ function FeaturedCategories() {
     {
       id: 4,
       name: 'Gaming Monitors',
-      image: 'https://via.placeholder.com/300x300?text=Monitors',
+      image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
       description: 'High refresh rate displays for smooth gameplay',
       bgColor: 'bg-green-600',
       count: '15 Products'
