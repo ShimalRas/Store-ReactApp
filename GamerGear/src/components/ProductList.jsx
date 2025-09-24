@@ -181,7 +181,7 @@ function ProductCard({ product }) {
 
 function ProductList() {
   return (
-    <section className="py-12" id="products">
+    <section className="py-12 bg-gray-50 dark:bg-gray-900" id="products">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Gaming Gear</h2>
         <div className="w-24 h-1 bg-primary-light mx-auto"></div>

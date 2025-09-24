@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 
 function Navbar() {
@@ -7,18 +8,20 @@ function Navbar() {
   const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
 
   const categories = [
-    { name: 'Keyboards', href: '#keyboards', icon: '⌨️' },
-    { name: 'Mice', href: '#mice', icon: '🖱️' },
-    { name: 'Headphones', href: '#headphones', icon: '🎧' },
-    { name: 'Monitors', href: '#monitors', icon: '🖥️' },
-    { name: 'Decoration Items', href: '#decoration', icon: '💡' }
+    { name: 'Keyboards', href: '/keyboards', icon: '⌨️' },
+    { name: 'Mice', href: '/mice', icon: '🖱️' },
+    { name: 'Headphones', href: '/headphones', icon: '🎧' },
+    { name: 'Monitors', href: '/monitors', icon: '🖥️' },
+    { name: 'Decoration Items', href: '/decoration', icon: '💡' }
   ];
   
   return (
     <nav className="bg-gray-900 text-white py-4 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4 flex flex-wrap items-center justify-between">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-primary-light">GamerGear</h1>
+          <Link to="/" className="text-2xl font-bold text-primary-light hover:text-primary transition-colors">
+            GamerGear
+          </Link>
         </div>
         
         {/* Mobile menu button */}
@@ -39,7 +42,7 @@ function Navbar() {
         {/* Desktop & Mobile Menu */}
         <div className={`w-full lg:flex lg:w-auto lg:items-center ${isMenuOpen ? 'block' : 'hidden'} mt-4 lg:mt-0 transition-all duration-300 ease-in-out`}>
           <ul className="lg:flex lg:space-x-8 flex-col lg:flex-row space-y-2 lg:space-y-0">
-            <li><a href="#home" className="hover:text-primary-light block py-2 transition-colors duration-200">Home</a></li>
+            <li><Link to="/" className="hover:text-primary-light block py-2 transition-colors duration-200">Home</Link></li>
             
             {/* Categories Dropdown */}
             <li className="relative group">
@@ -63,23 +66,23 @@ function Navbar() {
               >
                 <div className="py-2">
                   {categories.map((category, index) => (
-                    <a
+                    <Link
                       key={index}
-                      href={category.href}
+                      to={category.href}
                       className="flex items-center px-4 py-3 text-gray-300 hover:text-primary-light hover:bg-gray-700 transition-colors duration-200"
                       onClick={() => setIsCategoriesOpen(false)}
                     >
                       <span className="text-lg mr-3">{category.icon}</span>
                       <span className="font-medium">{category.name}</span>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
             </li>
             
-            <li><a href="#deals" className="hover:text-primary-light block py-2 transition-colors duration-200">Deals</a></li>
-            <li><a href="#about" className="hover:text-primary-light block py-2 transition-colors duration-200">About</a></li>
-            <li><a href="#contact" className="hover:text-primary-light block py-2 transition-colors duration-200">Contact</a></li>
+            <li><Link to="/deals" className="hover:text-primary-light block py-2 transition-colors duration-200">Deals</Link></li>
+            <li><Link to="/about" className="hover:text-primary-light block py-2 transition-colors duration-200">About</Link></li>
+            <li><Link to="/contact" className="hover:text-primary-light block py-2 transition-colors duration-200">Contact</Link></li>
           </ul>
           
           <div className="flex items-center space-x-4 mt-4 lg:mt-0 lg:ml-8">
