@@ -7,43 +7,64 @@ const KeyboardsPage = () => {
       id: 1,
       name: "Mechanical Gaming Keyboard RGB",
       price: "$129.99",
-      image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&h=500&fit=crop&crop=center",
+      image: "/images/keyboard/618A+B25MKL._AC_UY218_.jpg",
       features: ["RGB Backlight", "Mechanical Switches", "Programmable Keys", "Anti-Ghosting"]
     },
     {
       id: 2,
       name: "Wireless Gaming Keyboard",
       price: "$89.99",
-      image: "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=500&h=500&fit=crop&crop=center",
+      image: "/images/keyboard/61hOhuiqrTL._AC_UY218_.jpg",
       features: ["2.4GHz Wireless", "Low Profile Keys", "Long Battery Life", "Compact Design"]
     },
     {
       id: 3,
       name: "Pro Mechanical Keyboard",
       price: "$199.99",
-      image: "https://images.unsplash.com/photo-1595044426077-d36d9236d54a?w=500&h=500&fit=crop&crop=center",
+      image: "/images/keyboard/61LcZpKWW-L._AC_UY218_.jpg",
       features: ["Cherry MX Switches", "Aluminum Frame", "Custom Keycaps", "USB-C"]
     },
     {
       id: 4,
       name: "TKL Gaming Keyboard",
       price: "$79.99",
-      image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=500&h=500&fit=crop&crop=center",
+      image: "/images/keyboard/61MC8BK0w0L._AC_UY218_.jpg",
       features: ["Tenkeyless Design", "RGB Effects", "N-Key Rollover", "Detachable Cable"]
     },
     {
       id: 5,
       name: "60% Compact Keyboard",
       price: "$149.99",
-      image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500&h=500&fit=crop&crop=center",
+      image: "/images/keyboard/61RM1rMoceL._AC_UY218_.jpg",
       features: ["60% Layout", "Hot-Swappable", "Gasket Mount", "Premium Build"]
     },
     {
       id: 6,
       name: "Membrane Gaming Keyboard",
       price: "$39.99",
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=500&h=500&fit=crop&crop=center",
+      image: "/images/keyboard/61x7xKdrBHL._AC_UY218_.jpg",
       features: ["Rainbow Backlight", "Quiet Keys", "Spill Resistant", "Budget Friendly"]
+    },
+    {
+      id: 7,
+      name: "Premium Mechanical Keyboard",
+      price: "$249.99",
+      image: "/images/keyboard/61YdGCfiwEL._AC_UY218_.jpg",
+      features: ["Premium Switches", "Aluminum Body", "Per-Key RGB", "Media Controls"]
+    },
+    {
+      id: 8,
+      name: "Gaming Keyboard with Wrist Rest",
+      price: "$109.99",
+      image: "/images/keyboard/714WvRlURgL._AC_UY218_.jpg",
+      features: ["Wrist Rest", "Macro Keys", "Gaming Mode", "Anti-Ghosting"]
+    },
+    {
+      id: 9,
+      name: "Compact Gaming Keyboard",
+      price: "$79.99",
+      image: "/images/keyboard/71LEUu+OKUL._AC_UY218_.jpg",
+      features: ["Space Saving", "Mechanical Keys", "RGB Backlight", "USB Passthrough"]
     }
   ];
 

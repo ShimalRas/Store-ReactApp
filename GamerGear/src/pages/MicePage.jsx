@@ -7,43 +7,64 @@ const MicePage = () => {
       id: 1,
       name: "Pro Gaming Mouse RGB",
       price: "$79.99",
-      image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop&crop=center",
+      image: "/images/mouse/411Ke19KUFL._AC_UY218_.jpg",
       features: ["16000 DPI", "RGB Lighting", "Programmable Buttons", "Ergonomic Design"]
     },
     {
       id: 2,
       name: "Wireless Gaming Mouse",
       price: "$59.99",
-      image: "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&h=500&fit=crop&crop=center",
+      image: "/images/mouse/41bkEasx4AL._AC_UY218_.jpg",
       features: ["2.4GHz Wireless", "Ultra-Light", "Long Battery", "High Precision"]
     },
     {
       id: 3,
       name: "MMO Gaming Mouse",
       price: "$99.99",
-      image: "https://images.unsplash.com/photo-1563297007-0686b6d0171e?w=500&h=500&fit=crop&crop=center",
+      image: "/images/mouse/514Ba-DbYNL._AC_UY218_.jpg",
       features: ["12 Side Buttons", "Macro Support", "Adjustable Weight", "Premium Sensor"]
     },
     {
       id: 4,
       name: "Ambidextrous Gaming Mouse",
       price: "$49.99",
-      image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=500&h=500&fit=crop&crop=center",
+      image: "/images/mouse/51gJXPR14FL._AC_UY218_.jpg",
       features: ["Ambidextrous Design", "Optical Sensor", "Customizable", "Lightweight"]
     },
     {
       id: 5,
       name: "Ultra Light Gaming Mouse",
       price: "$89.99",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=500&fit=crop&crop=center",
+      image: "/images/mouse/51UCF1KOnKL._AC_UY218_.jpg",
       features: ["Ultra Lightweight", "Honeycomb Shell", "Paracord Cable", "PTFE Feet"]
     },
     {
       id: 6,
       name: "Budget Gaming Mouse",
       price: "$29.99",
-      image: "https://images.unsplash.com/photo-1541823709867-1b206113eafd?w=500&h=500&fit=crop&crop=center",
+      image: "/images/mouse/51xIj85RktL._AC_UY218_.jpg",
       features: ["6400 DPI", "LED Backlight", "6 Buttons", "Comfortable Grip"]
+    },
+    {
+      id: 7,
+      name: "Professional Gaming Mouse",
+      price: "$119.99",
+      image: "/images/mouse/617QXc+mW9L._AC_UY218_.jpg",
+      features: ["25600 DPI", "Wireless/Wired", "Programmable", "Tournament Ready"]
+    },
+    {
+      id: 8,
+      name: "Ergonomic Gaming Mouse",
+      price: "$69.99",
+      image: "/images/mouse/61aBUvuPtPL._AC_UY218_.jpg",
+      features: ["Ergonomic Grip", "High Precision", "RGB Lighting", "Long Battery"]
+    },
+    {
+      id: 9,
+      name: "Compact Gaming Mouse",
+      price: "$45.99",
+      image: "/images/mouse/61AcT0ZuO3L._AC_UY218_.jpg",
+      features: ["Compact Design", "Travel Friendly", "Optical Sensor", "USB-C Charging"]
     }
   ];
 

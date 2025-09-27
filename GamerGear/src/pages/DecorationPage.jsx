@@ -7,35 +7,35 @@ const DecorationPage = () => {
       id: 1,
       name: "RGB LED Strip Kit",
       price: "$39.99",
-      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500&h=500&fit=crop&crop=center",
+      image: "/images/decoration/51kosHaxLML._AC_UL320_.jpg",
       features: ["16.4ft Length", "16M Colors", "Music Sync", "App Control"]
     },
     {
       id: 2,
       name: "Gaming Neon Signs",
       price: "$89.99",
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=500&fit=crop&crop=center",
+      image: "/images/decoration/716CfWlEY3L._AC_UL320_.jpg",
       features: ["Custom Text", "RGB Colors", "Wall Mount", "Low Power"]
     },
     {
       id: 3,
       name: "Floating Game Controller Shelf",
       price: "$24.99",
-      image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=500&h=500&fit=crop&crop=center",
+      image: "/images/decoration/719AQtN3ywL._AC_UL320_.jpg",
       features: ["Holds 4 Controllers", "Floating Design", "Easy Install", "Multiple Colors"]
     },
     {
       id: 4,
       name: "Gaming Posters Set",
       price: "$19.99",
-      image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=500&h=500&fit=crop&crop=center",
+      image: "/images/decoration/71uRENNFM4L._AC_UL320_.jpg",
       features: ["Set of 6 Posters", "High Quality Print", "Multiple Sizes", "Gaming Themes"]
     },
     {
       id: 5,
       name: "RGB Desktop Lamp",
       price: "$59.99",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=center",
+      image: "/images/decoration/81qQwfL1QSL._AC_UL320_.jpg",
       features: ["RGB Lighting", "Touch Control", "USB Powered", "Adjustable Arm"]
     },
     {

@@ -5,7 +5,7 @@ const productData = [
     id: 1,
     name: 'RGB Gaming Keyboard',
     price: 149.99,
-    image: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+    image: '/images/keyboard/61YdGCfiwEL._AC_UY218_.jpg',
     category: 'Peripherals',
     rating: 4.8,
     inStock: true
@@ -14,7 +14,7 @@ const productData = [
     id: 2,
     name: 'Ultra-Precision Gaming Mouse',
     price: 89.99,
-    image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
+    image: '/images/mouse/61+jneMKiGL._AC_UY218_.jpg',
     category: 'Peripherals',
     rating: 4.9,
     inStock: true
