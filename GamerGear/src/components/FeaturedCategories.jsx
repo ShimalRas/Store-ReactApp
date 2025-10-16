@@ -13,7 +13,7 @@ function FeaturedCategories() {
     {
       id: 2,
       name: 'Gaming Keyboards',
-      image: 'https://images.unsplash.com/photo-1541140532154-b024d705b90a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
+      image: '/images/keyboard/714WvRlURgL._AC_UY218_.jpg',
       description: 'Responsive mechanical keyboards for quick actions',
       bgColor: 'bg-blue-600',
       count: '32 Products'
@@ -21,7 +21,7 @@ function FeaturedCategories() {
     {
       id: 3,
       name: 'Gaming Mice',
-      image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
+      image: '/images/mouse/614timipKAL._AC_UY218_.jpg',
       description: 'Precision mice for perfect aiming',
       bgColor: 'bg-red-600',
       count: '18 Products'
